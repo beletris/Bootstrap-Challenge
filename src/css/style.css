@@ -54,6 +54,7 @@
 
 .my-portfolio-box-text {
   position: absolute;
+  width: 80%;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -69,4 +70,26 @@
   content: "";
   z-index: 0;
   background: none repeat rgba(23, 162, 184, 0.6);
+}
+
+.separator {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.separator::before, separator::after {
+  position: absolute;
+  content: "";
+}
+
+.separator::before {
+  background: none repeat rgb(23, 162, 184);
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 100% 100%;
+  transform: rotate(-1deg);
 }
