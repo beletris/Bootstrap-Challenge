@@ -14,14 +14,6 @@
   letter-spacing: 5px;
 }
 
-.my-mission-text::after {
-  content: "";
-  display: block;
-  margin: 30px auto;
-  width: 50%;
-  border: 1px solid rgb(23, 162, 184);
-}
-
 .my-mission-background-icon {
   width: 100px;
   height: 100px;
@@ -37,15 +29,6 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-
-}
-
-.my-portfolio-text::after {
-  content: "";
-  display: block;
-  margin: 30px auto;
-  width: 50%;
-  border: 1px solid rgb(23, 162, 184);
 }
 
 .my-portfolio-box {
@@ -107,7 +90,10 @@
   box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.4);
 }
 
-.my-team-text::after {
+.my-mission-text::after,
+.my-portfolio-text::after,
+.my-team-text::after,
+.my-contact-text::after {
   content: "";
   display: block;
   margin: 30px auto;
@@ -119,4 +105,25 @@
   object-fit: cover;
   width: 100px;
   height: 100px;
+}
+
+.my-contact-box {
+  max-width: 700px;
+  position: relative;
+}
+
+.my-contact-box-imeg {
+  max-width: 700px;
+}
+
+.my-contact-box-img-overlay::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  z-index: 0;
+  background: none repeat rgba(255, 193, 7, 0.6);
 }
