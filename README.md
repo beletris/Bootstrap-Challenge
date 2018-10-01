@@ -2,6 +2,9 @@
 ## General Info
 Based od challenge "Poznam Bootstrapa 4 ze Strefą Kursów" front-end challenge on https://bedeprogramistka.pl. Small colour modifications made in my version.
 
+### Live
+* https://julaineb.github.io/Bootstrap-Challenge/src/index.html
+
 ## Technologies
 Contains index.html only. The scope was rather basic. Bootstrap 4, HTML, CSS, jQuery were used. RWD has been applied. 
 
